@@ -41,6 +41,7 @@ plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.show()
 
-lin_reg.predict(6.5)
+#Predicting Output
+lin_reg.predict(np.array([[6.5]]))
  
-lin_reg_2.predict(poly_reg.fit_transform(6.5))
+lin_reg_2.predict(poly_reg.fit_transform(np.array([[6.5]])))
