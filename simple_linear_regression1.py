@@ -1,3 +1,5 @@
+#Dataset preprocessing
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -21,7 +23,7 @@ regressor.fit(X_train,Y_train)
 Y_pred = regressor.predict(X_test) 
 
 plt.scatter(X_train,Y_train,color='red')
-plt.plot(X_train,regressor(X_train),color='blue')
+plt.plot(X_train,regressor.predict(X_train),color='blue')
 plt.title('Salary vs Experience (Training sets)')
 plt.xlabel("Years of Experience" )
 plt.ylabel("Salary")
